@@ -1,0 +1,66 @@
+import streamlit as st
+import pandas as pd
+
+
+st.image('Bears3.png')
+st.title("Wood Street Bears FC")
+st.header("Current tournament champions")
+st.markdown("Dav's yellow peril (Feb 2025)")
+st.markdown("Dav, Steve, Felipe, Liam, Alwyn, Joe, Leo, Aiden")
+st.markdown("Player of the tournament - Steve")
+
+
+df = pd.read_csv('lpf.csv')
+print(df.head())
+
+st.header("Sunday football stats 2025")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.subheader("Top scorers")
+    gc = df[['Player','Goal']]
+    gc = gc.sort_values('Goal', ascending=False).head(5)[['Player', 'Goal']]
+    st.write(gc)
+
+
+with col2:
+    st.subheader("Most assists")
+    ac = df[['Player','Assist']]
+    ac = ac.sort_values('Assist', ascending=False).head(5)[['Player', 'Assist']]
+    st.write(ac)
+
+with col3:
+    st.subheader("Goal and assists")
+    ga = df[['Player','G+A']]
+    ga = ga.sort_values('G+A', ascending=False).head(5)[['Player', 'G+A']]
+    st.write(ga)
+
+
+st.subheader("Most apps")
+app = df[['Player','Apps']]
+app = app.sort_values('Apps',ascending=False).head(5)[['Player','Apps']]
+st.write(app)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
