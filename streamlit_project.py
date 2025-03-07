@@ -5,8 +5,7 @@ import pandas as pd
 st.image('Bears3.png')
 st.title("Wood Street Bears FC")
 st.header("Current tournament champions")
-st.markdown("Dav's yellow peril (Feb 2025)")
-st.markdown("Dav, Steve, Felipe, Liam, Alwyn, Joe, Leo, Aiden")
+st.markdown("Dav's yellow peril (Feb 2025): Dav, Steve, Felipe, Liam, Alwyn, Joe, Leo, Aiden")
 st.markdown("Player of the tournament - Steve")
 
 
@@ -40,6 +39,10 @@ st.subheader("Most apps")
 app = df[['Player','Apps']]
 app = app.sort_values('Apps',ascending=False).head(5)[['Player','Apps']]
 st.write(app)
+
+st.header("Fixtures")
+st.markdown("Sat 26 April 2025 - tournament or 11-aside")
+
 
 
 
