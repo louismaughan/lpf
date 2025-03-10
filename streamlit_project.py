@@ -17,15 +17,15 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.subheader("Top scorers")
-    gc = df[['Player','Goal']]
-    gc = gc.sort_values('Goal', ascending=False).head(5)[['Player', 'Goal']]
+    gc = df[['Player','Goals']]
+    gc = gc.sort_values('Goals', ascending=False).head(5)[['Player', 'Goals']]
     st.write(gc)
 
 
 with col2:
     st.subheader("Most assists")
-    ac = df[['Player','Assist']]
-    ac = ac.sort_values('Assist', ascending=False).head(5)[['Player', 'Assist']]
+    ac = df[['Player','Assists']]
+    ac = ac.sort_values('Assists', ascending=False).head(5)[['Player', 'Assists']]
     st.write(ac)
 
 with col3:
@@ -42,6 +42,7 @@ st.write(app)
 
 st.header("Fixtures")
 st.markdown("Sat 26 April 2025 - tournament or 11-aside")
+
 
 
 
