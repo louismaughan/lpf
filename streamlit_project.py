@@ -35,10 +35,22 @@ with col3:
     st.write(ga)
 
 
-st.subheader("Most apps")
-app = df[['Player','Apps']]
-app = app.sort_values('Apps',ascending=False).head(5)[['Player','Apps']]
-st.write(app)
+col1, col2 = st.columns(2)
+
+with col1:
+   st.subheader("Win percentage")
+   win = df[['Player','Apps','Win %']]
+   win_fil = win[win['Apps'] > 4]
+   win_fil = win_fil.sort_values('Win %',ascending=False).head(5)[['Player','Win %']]
+   st.write(win_fil)
+
+with col2:   
+   st.subheader("Most apps")
+   app = df[['Player','Apps']]
+   app = app.sort_values('Apps',ascending=False).head(5)[['Player','Apps']]
+   st.write(app)
+
+
 
 st.header("Fixtures")
 st.markdown("Sat 26 April 2025 - tournament or 11-aside")
