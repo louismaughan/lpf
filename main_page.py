@@ -11,6 +11,6 @@ st.markdown("Player of the tournament - Steve")
 st.markdown("Top scorer - Louis")
 
 st.header("Fixtures")
-st.markdown("Sat 26 April 2025 - tournament or 11-aside (behind Sainsburys)")
+st.markdown("Sat 26 April 2025 - 11-aside (behind Sainsburys)")
 st.markdown("Sun 10 May 2025 - Wood Street Bears v Coppermill Swifts Vets")
 
