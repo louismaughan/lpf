@@ -15,7 +15,6 @@ st.markdown("Goals: Alec 2")
 st.markdown("Assists: Stu, James")
 
 st.header("Fixtures")
-st.markdown("Sun 8 June 2025 - LPOB CFC v Gary Old men")
 st.markdown("Sat 5 July 2025 - Summer tournament (Peter May)")
 
 
