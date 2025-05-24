@@ -26,7 +26,7 @@ with col2:
 with col3:   
    st.subheader("DPOTM")
    dpotm = df[['Player','DPOTM']]
-   dpotm = dpotm.sort_values('DPOTM',ascending=False).head(6)[['Player','DPOTM']]
+   dpotm = dpotm.sort_values('DPOTM',ascending=False).head(7)[['Player','DPOTM']]
    st.write(dpotm)
 
 
