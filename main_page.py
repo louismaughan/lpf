@@ -10,13 +10,15 @@ st.markdown("Player of the tournament - Donnie")
 
 
 st.header("Results")
-st.markdown("Sun 8 June 2025 - LPOB CFC 4 - 3 Gary Oldmen")
-st.markdown("Goals: Alex, Stu 3")
-st.markdown("Assists: Louis 3, James")
+st.markdown("Sat 23 August 2025 - Clapton CFC vets 3 - 3 LPOB")
+st.markdown("Goals: Stu 2, Gregg")
+st.markdown("Assists: Stu, Louis, Riz")
 
 st.header("Fixtures")
-st.markdown("Sat 23 August v Clapton Vets")
+st.markdown("Sat 13 September - Tournament 5")
 st.markdown("Sun 21 September v Coppermill Swifts")
+st.markdown("Sat 25 October v Bury Rangers (A) (VFA Cup)")
+
 
 
 
