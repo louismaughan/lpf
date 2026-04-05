@@ -25,10 +25,11 @@ with col2:
    st.write(app)
 
 with col3:   
-   st.subheader("DPOTM")
+   st.subheader("POTM votes")
    dpotm = df[['Player','Votes']]
    dpotm = dpotm.sort_values('Votes',ascending=False).head(10)[['Player','Votes']]
    st.write(dpotm)
+   
 
 
 
