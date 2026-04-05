@@ -17,13 +17,6 @@ with col1:
    win_fil = win_fil.sort_values('Win %',ascending=False).head(10)[['Player','Win %']]
    st.write(win_fil)
 
-#with col1:
-   st.subheader("Ratings")
-   rat = df[['Player','Apps','Rating']]
-   rat_fil = rat[rat['Apps'] > 10]
-   rat_fil = rat_fil.sort_values('Rating',ascending=False).head(10)[['Player','Rating']]
-   st.write(rat_fil)   
-
 
 with col2:   
    st.subheader("Most apps")
@@ -34,9 +27,9 @@ with col2:
 with col3:   
    st.subheader("DPOTM")
    dpotm = df[['Player','Votes']]
-   dpotm = dpotm.sort_values('Votes',ascending=False).head(10)[['Player','DPOTM']]
+   dpotm = dpotm.sort_values('Votes',ascending=False).head(10)[['Player','Votes']]
    st.write(dpotm)
-   
+
 
 
 
