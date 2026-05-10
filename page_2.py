@@ -13,7 +13,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
    st.subheader("Win percentage")
    win = df[['Player','Apps','Win %']]
-   win_fil = win[win['Apps'] > 3]
+   win_fil = win[win['Apps'] > 4]
    win_fil = win_fil.sort_values('Win %',ascending=False).head(10)[['Player','Win %']]
    st.write(win_fil)
 
@@ -24,11 +24,20 @@ with col2:
    app = app.sort_values('Apps',ascending=False).head(10)[['Player','Apps']]
    st.write(app)
 
+
 with col3:   
-   st.subheader("POTM votes")
-   dpotm = df[['Player','Votes']]
-   dpotm = dpotm.sort_values('Votes',ascending=False).head(10)[['Player','Votes']]
-   st.write(dpotm)
+   st.subheader("Goal difference per game")
+   gd = df[['Player','Apps','GD']]
+   gd90 = gd[gd['Apps'] > 4]
+   gd90 = gd90.sort_values('GD',ascending=False).head(10)[['Player','GD']]
+   st.write(gd90)
+   
+
+#with col3:   
+   #st.subheader("POTM votes")
+   #dpotm = df[['Player','Votes']]
+   #dpotm = dpotm.sort_values('Votes',ascending=False).head(10)[['Player','Votes']]
+   #st.write(dpotm)
    
 
 
