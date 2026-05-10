@@ -26,7 +26,7 @@ with col2:
 
 
 with col3:   
-   st.subheader("Goal difference per game")
+   st.subheader("GD per game")
    gd = df[['Player','Apps','GD']]
    gd90 = gd[gd['Apps'] > 4]
    gd90 = gd90.sort_values('GD',ascending=False).head(10)[['Player','GD']]
